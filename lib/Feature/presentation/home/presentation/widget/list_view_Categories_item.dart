@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:selaty/Feature/presentation/home/widget/list_view_Categories.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/list_view_Categories.dart';
 
 class ListViewCategoriesItem extends StatelessWidget {
   const ListViewCategoriesItem({super.key});

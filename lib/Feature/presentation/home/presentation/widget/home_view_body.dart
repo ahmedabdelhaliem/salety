@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:selaty/Feature/presentation/home/widget/best_seller_list_view_item.dart';
-import 'package:selaty/Feature/presentation/home/widget/chance_list_view_item.dart';
-import 'package:selaty/Feature/presentation/home/widget/custom_row_home_view.dart';
-import 'package:selaty/Feature/presentation/home/widget/custom_text_row.dart';
-import 'package:selaty/Feature/presentation/home/widget/fresh_category_grid_view.dart';
-import 'package:selaty/Feature/presentation/home/widget/image_show.dart';
-import 'package:selaty/Feature/presentation/home/widget/image_slider.dart';
-import 'package:selaty/Feature/presentation/home/widget/list_view_Categories_item.dart';
-import 'package:selaty/Feature/presentation/home/widget/offers_container_grid_view.dart';
-import 'package:selaty/Feature/presentation/home/widget/section_row_and_setting.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/best_seller_list_view_item.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/chance_list_view_item.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/custom_row_home_view.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/custom_text_row.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/fresh_category_grid_view.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/image_show.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/image_slider.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/list_view_Categories_item.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/offers_container_grid_view.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/section_row_and_setting.dart';
 import 'package:selaty/core/assets/assets.dart';
 import 'package:selaty/core/assets/styles.dart';
 

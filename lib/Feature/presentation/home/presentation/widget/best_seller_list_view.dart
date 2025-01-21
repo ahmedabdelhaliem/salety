@@ -5,7 +5,7 @@ import 'package:selaty/core/assets/assets.dart';
 import 'package:selaty/core/assets/styles.dart';
 import 'package:selaty/core/utils/app_router.dart';
 
-import '../../../../constants.dart';
+import '../../../../../constants.dart';
 
 class BestSellerListView extends StatelessWidget {
   const BestSellerListView({super.key});

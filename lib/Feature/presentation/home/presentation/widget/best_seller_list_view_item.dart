@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:selaty/Feature/presentation/home/widget/best_seller_list_view.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/best_seller_list_view.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});

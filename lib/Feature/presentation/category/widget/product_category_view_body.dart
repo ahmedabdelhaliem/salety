@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:selaty/Feature/presentation/category/widget/product_category_grid_view_item.dart';
-import 'package:selaty/Feature/presentation/home/widget/section_row_and_setting.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/section_row_and_setting.dart';
 import 'package:selaty/core/assets/assets.dart';
 import 'package:selaty/core/widget/Custom_app_bar.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:selaty/Feature/presentation/home/widget/details_item.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/details_item.dart';
 import 'package:selaty/core/assets/assets.dart';
 import 'package:selaty/core/utils/app_router.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:selaty/Feature/presentation/home/widget/search_text_feild.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/search_text_feild.dart';
 import 'package:selaty/constants.dart';
 import 'package:selaty/core/assets/assets.dart';
 import 'package:selaty/core/widget/custom_icon.dart';
