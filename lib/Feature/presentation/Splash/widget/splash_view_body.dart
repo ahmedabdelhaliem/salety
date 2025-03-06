@@ -4,11 +4,13 @@ import 'package:go_router/go_router.dart';
 import 'package:selaty/constants.dart';
 import 'package:selaty/core/utils/app_router.dart';
 import 'package:selaty/core/assets/assets.dart';
+import 'package:selaty/core/utils/shared_pref.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _SplashViewBodyState createState() => _SplashViewBodyState();
 }
 
@@ -16,15 +18,29 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   void initState() {
     super.initState();
-    navigatToHome();
+    // navigatToHome();
+    checkUserStatus();
   }
 
-  // دالة التنقل إلى الصفحة الرئيسية
-  void navigatToHome() {
-    Future.delayed(const Duration(seconds: 4), () {
-      GoRouter.of(context).pushReplacement(AppRouter.kSplashContian);
+  Future<void> checkUserStatus() async {
+    var userToken =
+        Preferences.getString('user_token'); // احصل على التوكن المخزن
+
+    Future.delayed(Duration(milliseconds: 1500), () {
+      if (userToken != null && userToken.isNotEmpty) {
+        GoRouter.of(context).pushReplacement(AppRouter.kHomeView);
+      } else {
+        GoRouter.of(context).pushReplacement(AppRouter.kSplashContian);
+      }
     });
   }
+
+  // // دالة التنقل إلى الصفحة الرئيسية
+  // void navigatToHome() {
+  //   Future.delayed(const Duration(seconds: 4), () {
+  //     GoRouter.of(context).pushReplacement(AppRouter.kSplashContian);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:selaty/Feature/presentation/Login/widget/otp_view_body.dart';
+import 'package:selaty/Feature/presentation/Login/presentation/widget/otp_view_body.dart';
 import 'package:selaty/core/assets/styles.dart';
+// ignore: unused_import
 import 'package:selaty/core/utils/app_router.dart';
 
 class OtpView extends StatelessWidget {

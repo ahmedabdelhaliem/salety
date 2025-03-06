@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/Feature/presentation/category/widget/Posation_logo_circle_avatar.dart';
-import 'package:selaty/Feature/presentation/category/widget/category_view_body.dart';
+import 'package:selaty/Feature/presentation/category/presentation/widget/Posation_logo_circle_avatar.dart';
+import 'package:selaty/Feature/presentation/category/presentation/widget/category_view_body.dart';
 import 'package:selaty/core/widget/custom_bottom_app_bar.dart';
 
 class CategoryView extends StatefulWidget {

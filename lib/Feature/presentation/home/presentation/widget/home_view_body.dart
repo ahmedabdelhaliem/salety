@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:selaty/Feature/presentation/home/presentation/widget/best_seller_list_view_item.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/best_seller_list_view_bloc_builder.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/chance_list_view_item.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/custom_row_home_view.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/custom_text_row.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/fresh_category_grid_view.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/image_show.dart';
-import 'package:selaty/Feature/presentation/home/presentation/widget/image_slider.dart';
-import 'package:selaty/Feature/presentation/home/presentation/widget/list_view_Categories_item.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/image_slider_bloc_builder.dart';
+import 'package:selaty/Feature/presentation/home/presentation/widget/list_view_Categories_item_bloc_bluider.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/offers_container_grid_view.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/section_row_and_setting.dart';
 import 'package:selaty/core/assets/assets.dart';
@@ -33,7 +33,7 @@ class HomeViewBody extends StatelessWidget {
             text: 'القيمة الافضل',
             text2: 'اعلى المبيعات',
           )),
-          const SliverToBoxAdapter(child: SwiperSlider()),
+          const SliverToBoxAdapter(child: ImageSliderBlocBuilder()),
           SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 10.h),
@@ -44,10 +44,10 @@ class HomeViewBody extends StatelessWidget {
                   ),
             ),
           ),
-          const SliverToBoxAdapter(child: ListViewCategoriesItem()),
+          const SliverToBoxAdapter(child: ListViewCategoriesBlocBuilder()),
           const SliverToBoxAdapter(child: CustomTextRow(text: 'الاكثر مبيعا')),
-          const SliverToBoxAdapter(child: BestSellerListViewItem()),
-          const SliverToBoxAdapter(child: ImageShow(image: Assets.slider)),
+          const SliverToBoxAdapter(child: BestSellerListViewBlocBuilder()),
+          const SliverToBoxAdapter(child: ImageSliderBlocBuilder()),
           const SliverToBoxAdapter(
               child: CustomTextRow(text: 'تسوق حسب العروض')),
           const SliverToBoxAdapter(child: OffersContainerGridView()),
@@ -60,8 +60,8 @@ class HomeViewBody extends StatelessWidget {
                   : Styles.textStyle18,
             ),
           ),
-          const SliverToBoxAdapter(child: FreshCategoryGridView()),
-          const SliverToBoxAdapter(child: ImageShow(image: Assets.slider2)),
+          const SliverToBoxAdapter(child: BestSellerListViewBlocBuilder()),
+          const SliverToBoxAdapter(child: ImageSliderBlocBuilder()),
           SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 8.h),

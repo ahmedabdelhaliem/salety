@@ -8,8 +8,8 @@ import 'package:selaty/core/utils/app_router.dart';
 import '../../../../../constants.dart';
 
 class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
-
+  const BestSellerListView({super.key, required this.imageProduct});
+  final String imageProduct;
   @override
   Widget build(BuildContext context) {
     final bool isLandscape =

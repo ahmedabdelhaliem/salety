@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:selaty/Feature/presentation/Splash/widget/custom_logo_splash.dart';
-import 'package:selaty/Feature/presentation/Splash/widget/custom_smooth_page.dart';
-import 'package:selaty/core/assets/styles.dart';
-import 'package:selaty/Feature/presentation/Splash/widget/custom_Arrow_botton.dart';
 import 'package:selaty/constants.dart';
-import 'package:selaty/core/utils/app_router.dart';
 import 'package:selaty/core/assets/assets.dart';
 
 class ThirdSplash extends StatelessWidget {

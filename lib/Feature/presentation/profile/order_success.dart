@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/Feature/presentation/category/widget/Posation_logo_circle_avatar.dart';
+import 'package:selaty/Feature/presentation/category/presentation/widget/Posation_logo_circle_avatar.dart';
 import 'package:selaty/Feature/presentation/profile/widget/order_success_view_body.dart';
 import 'package:selaty/core/widget/custom_bottom_app_bar.dart';
-import 'package:selaty/Feature/presentation/category/widget/impty_cart_view_body.dart';
 
 class OrderSuccess extends StatefulWidget {
   const OrderSuccess({super.key});

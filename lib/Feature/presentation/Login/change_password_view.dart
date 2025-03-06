@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/Feature/presentation/Login/widget/change_password_body_view.dart';
+import 'package:selaty/Feature/presentation/Login/presentation/widget/change_password_body_view.dart';
 import 'package:selaty/constants.dart';
 
 class ChangePasswordView extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:selaty/Feature/presentation/home/presentation/widget/custom_offers_container.dart';
 import 'package:selaty/constants.dart';
 

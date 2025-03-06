@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:selaty/constants.dart';
 import 'package:selaty/core/assets/styles.dart';
 
 class LogoutButton extends StatelessWidget {

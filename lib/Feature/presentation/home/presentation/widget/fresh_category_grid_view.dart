@@ -35,7 +35,9 @@ class FreshCategoryGridView extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return Padding(
             padding: EdgeInsets.symmetric(vertical: 2.h),
-            child: const BestSellerListView(),
+            child: const BestSellerListView(
+              imageProduct: '',
+            ),
           );
         },
       ),

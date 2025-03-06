@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:selaty/Feature/presentation/Login/change_password_view.dart';
 import 'package:selaty/Feature/presentation/Login/done_change_view.dart';
@@ -14,12 +15,16 @@ import 'package:selaty/Feature/presentation/category/delivery%20_address_view.da
 import 'package:selaty/Feature/presentation/category/impty_cart_view.dart';
 import 'package:selaty/Feature/presentation/category/product_category_view.dart';
 import 'package:selaty/Feature/presentation/category/shopping_cart_view.dart';
+import 'package:selaty/Feature/presentation/home/data/repo/home_repo_impl.dart';
 import 'package:selaty/Feature/presentation/home/home_view.dart';
+import 'package:selaty/Feature/presentation/home/presentation/manager/Slider_cubit/slider_cubit.dart';
+import 'package:selaty/Feature/presentation/home/presentation/manager/category_cubit/cubit/category_cubit.dart';
+import 'package:selaty/Feature/presentation/home/presentation/manager/product_cubit/product_cubit.dart';
 import 'package:selaty/Feature/presentation/profile/cart_about_main.dart';
-import 'package:selaty/Feature/presentation/profile/widget/cart_about_main_grid_view.dart';
 import 'package:selaty/Feature/presentation/profile/order_success.dart';
 import 'package:selaty/Feature/presentation/profile/profile_view.dart';
 import 'package:selaty/Feature/presentation/profile/track_order_view.dart';
+import 'package:selaty/core/utils/service_locator.dart';
 
 abstract class AppRouter {
   static const kHomeView = '/HomeView';
@@ -95,11 +100,28 @@ abstract class AppRouter {
       },
     ),
     GoRoute(
-      path: '/HomeView',
-      builder: (BuildContext context, GoRouterState state) {
-        return const HomeView();
+      path: AppRouter.kHomeView,
+      builder: (context, state) {
+        return MultiBlocProvider(
+          providers: [
+            BlocProvider(
+              create: (context) =>
+                  SliderCubit(getIt<HomeRepoImpl>())..fetchSlider(),
+            ),
+            BlocProvider(
+              create: (context) =>
+                  ProductCubit(getIt<HomeRepoImpl>())..frechProducts(),
+            ),
+            BlocProvider(
+              create: (context) =>
+                  CategoryCubit(getIt<HomeRepoImpl>())..fetchCategory(),
+            ),
+          ],
+          child: const HomeView(),
+        );
       },
     ),
+
     GoRoute(
       path: '/LoginView',
       builder: (BuildContext context, GoRouterState state) {

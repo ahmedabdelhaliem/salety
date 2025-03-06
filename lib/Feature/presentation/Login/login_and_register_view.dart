@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/Feature/presentation/Login/widget/login_and_register_view_body.dart';
+import 'package:selaty/Feature/presentation/Login/presentation/widget/login_and_register_view_body.dart';
 import 'package:selaty/constants.dart';
 
 class LoginAndRegisterView extends StatelessWidget {
